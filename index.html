@@ -1,13 +1,265 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"/>
     <script type="module" src="./js/main.js"></script>
-  </body>
+    <script type="module" src="./js/kaa.js"></script>
+</head>
+<body class="cv">
+<main class="cv__main">
+    <div class="modal__wrapper"></div>
+    <div class="row cv__row">
+        <div class="box">
+            <img class="img" src="./images/profiles/profileImg.jpg" alt="">
+        </div>
+        <div class="box name-box">
+            <div class="box__inner">
+                <div class="box__title greeting">
+                    Hello 👋🏻 I’m
+                </div>
+                <div class="box__content your-info">
+                    <div class="your-info__name">
+                        Karthik SR
+                    </div>
+                    <div class="your-info__role">
+                        UX/UI Designer
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box languages-box">
+            <div class="box__inner">
+                <div class="box__title">
+                    Languages
+                </div>
+                <div class="box__content">
+                    <div class="box__list">
+                        <div class="box__item language-skill">
+                            <div class="language-skill__name">English</div>
+                            <div class="language-skill__score language-skill__score_100">
+                                <div class="language-skill__score-bg"></div>
+                            </div>
+                        </div>
+                        <div class="box__item language-skill">
+                            <div class="language-skill__name">Malayalam</div>
+                            <div class="language-skill__score language-skill__score_100">
+                                <div class="language-skill__score-bg"></div>
+                            </div>
+                        </div>
+                        <div class="box__item language-skill">
+                            <div class="language-skill__name">Hindi</div>
+                            <div class="language-skill__score language-skill__score_80">
+                                <div class="language-skill__score-bg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row cv__row">
+        <div class="box experience-box">
+            <div class="box__inner">
+                <div class="box__title">
+                    Experience
+                </div>
+                <div class="box__content">
+                    <experiences-container></experiences-container>
+                </div>
+            </div>
+        </div>
+        <div class="box tools-box">
+            <div class="box__inner">
+                <div class="box__title">
+                    Tools
+                </div>
+                <div class="box__content">
+                    <div class="tools__container">
+                        <div class="tools__wrapper">
+                            <div class="tools__title-wrapper">
+                                <span class="tools__title tag">design</span>
+                            </div>
+                            <div class="tools__set">
+                                <div class="tools__item">
+                                    <img src="./images/icons/figma.svg" alt="figma icon">
+                                </div>
+                                <div class="tools__item">
+                                    <img src="./images/icons/photoshop.svg" alt="adobe photoshop icon">
+                                </div>
+                                <div class="tools__item">
+                                    <img src="./images/icons/illustrator.svg" alt="adobe illustrator icon">
+                                </div>
+                                <div class="tools__item">
+                                    <img src="./images/icons/premiere.svg" alt="adobe premiere icon">
+                                </div>
+                                <div class="tools__item">
+                                    <img src="./images/icons/notion.svg" alt="notion icon">
+                                </div>
+                                <div class="tools__item">
+                                    <img src="./images/icons/meet.svg" alt="google meet icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tools__wrapper">
+                            <div class="tools__title-wrapper">
+                                <span class="tools__title tag">no-code</span>
+                            </div>
+                            <div class="tools__set">
+                                <div class="tools__item">
+                                    <img src="./images/icons/zapìer.svg" alt="zapìer icon">
+                                </div>
+                                <div class="tools__item">
+                                    <img src="./images/icons/webflow.svg" alt="webflow icon">
+                                </div>
+                                <div class="tools__item">
+                                    <img src="./images/icons/framer.svg" alt="framer icon">
+                                </div>
+                                <div class="tools__item">
+                                    <img src="./images/icons/wordpress.svg" alt="wordpress icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tools__wrapper">
+                            <div class="tools__title-wrapper">
+                                <span class="tools__title tag">artificial intelligence</span>
+                            </div>
+                            <div class="tools__set">
+                                <div class="tools__item">
+                                    <img src="./images/icons/ChatGPT.svg" alt="ChatGPT icon">
+                                </div>
+                                <div class="tools__item">
+                                    <img src="./images/icons/Copilot.svg" alt="Copilot icon">
+                                </div>
+                                <div class="tools__item">
+                                    <img src="./images/icons/Midjourney.svg" alt="Midjourney icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row cv__row">
+        <div class="box education-box">
+            <div class="box__inner">
+                <div class="box__title">
+                    Education
+                </div>
+                <div class="box__content">
+                        <educations-container></educations-container>
+                        <!--                        <education-card mostRecent="true">-->
+                        <!--                            <span slot="date">2023</span>-->
+                        <!--                            <span slot="name">UI/UX</span>-->
+                        <!--                            <custom-tag slot="tag">UI</custom-tag>-->
+                        <!--                            <custom-tag slot="tag">UX</custom-tag>-->
+                        <!--                            <span slot="school">Coursera</span>-->
+                        <!--                        </education-card>-->
+
+                        <!--                        <div class="box__item education-item card card_primary">-->
+                        <!--                            <div class="card__top-bar">-->
+                        <!--                                <div class="card__title education-card__title">2023</div>-->
+                        <!--                                <div class="experience-item__tag">-->
+                        <!--                                    <img src="./images/icons/like.svg">-->
+                        <!--                                </div>-->
+                        <!--                            </div>-->
+                        <!--                            <div class="card__content card__content_column">-->
+                        <!--                                <div class="education-item__content">-->
+                        <!--                                    <div class="education-item__name">UI/UX</div>-->
+                        <!--                                    <div class="education-item__tags">-->
+                        <!--                                        <span class="education-item__tag">UX</span>-->
+                        <!--                                        <span class="education-item__tag">UI</span>-->
+                        <!--                                        <span class="education-item__tag">research</span>-->
+                        <!--                                        <span class="education-item__tag">DesignSystem</span>-->
+                        <!--                                        <span class="education-item__tag">Ui</span>-->
+                        <!--                                        <span class="education-item__tag">wireframing</span>-->
+                        <!--                                        <span class="education-item__tag">figma</span>-->
+                        <!--                                        <span class="education-item__tag">Ux</span>-->
+                        <!--                                    </div>-->
+                        <!--                                </div>-->
+                        <!--                                <div class="education-item__school">Coursera</div>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
+                        <!--                        <div class="box__item education-item card">-->
+                        <!--                            <div class="card__top-bar">-->
+                        <!--                                <div class="card__title education-card__title">2017-2022</div>-->
+                        <!--                            </div>-->
+                        <!--                            <div class="card__content card__content_column">-->
+                        <!--                                <div class="education-item__content">-->
+                        <!--                                    <div class="education-item__name">Law</div>-->
+                        <!--                                    <div class="education-item__tags">-->
+                        <!--                                        <span class="education-item__tag">law</span>-->
+                        <!--                                        <span class="education-item__tag">legalStudies</span>-->
+                        <!--                                        <span class="education-item__tag">contracts</span>-->
+                        <!--                                        <span class="education-item__tag">internationalLaws</span>-->
+                        <!--                                    </div>-->
+                        <!--                                </div>-->
+                        <!--                                <div class="education-item__action">University of Kerala</div>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
+                        <!--                        <div class="box__item education-item card">-->
+                        <!--                            <div class="card__top-bar">-->
+                        <!--                                <div class="card__title education-card__title">2017</div>-->
+                        <!--                            </div>-->
+                        <!--                            <div class="card__content card__content_column">-->
+                        <!--                                <div class="education-item__content">-->
+                        <!--                                    <div class="education-item__name">Graphic design</div>-->
+                        <!--                                    <div class="education-item__tags">-->
+                        <!--                                        <span class="education-item__tag">branding</span>-->
+                        <!--                                        <span class="education-item__tag">web</span>-->
+                        <!--                                        <span class="education-item__tag">illustration</span>-->
+                        <!--                                        <span class="education-item__tag">adobe</span>-->
+                        <!--                                    </div>-->
+                        <!--                                </div>-->
+                        <!--                                <div class="education-item__action">Coursrea</div>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
+                </div>
+            </div>
+        </div>
+        <div class="extra-box column cv__column">
+            <div class="box interests-box">
+                <div class="box__inner">
+                    <div class="box__title">
+                        Interests
+                    </div>
+                    <div class="box__content">
+                        <div class="box__list box__list_row interests-box__list">
+                            <div class="interests__tag tag">branding</div>
+                            <div class="interests__tag tag">design</div>
+                            <div class="interests__tag tag">photography</div>
+                            <div class="interests__tag tag">artificial intelligence</div>
+                            <div class="interests__tag tag">illustration</div>
+                            <div class="interests__tag tag">typography</div>
+                            <div class="interests__tag tag">social networks</div>
+                            <div class="interests__tag tag">research</div>
+                            <div class="interests__tag tag">dron pilot</div>
+                            <div class="interests__tag tag">games</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box contact-box">
+                <div class="box__inner">
+                    <div class="box__title">
+                        Let´s chat! I´m ready to work on excinting projects
+                    </div>
+                    <div class="box__content">
+                        <div class="contact-box__text">
+                            srkarthik.designscape@gmail.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
 </html>
