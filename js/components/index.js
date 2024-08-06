@@ -19,3 +19,5 @@ import './interests-container/interests-container.js';
 import './box/box.js';
 import './interests-box/interests-box.js';
 import './interests-form/interests-form.js';
+import './contact-box/contact-box.js';
+import './contact-form/contact-form.js';

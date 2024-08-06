@@ -6,12 +6,6 @@ class InterestsStorage extends Storage {
     constructor() {
         super('interests', initValue);
     }
-
-    changeItem(index, item) {
-        const newValue = this.get().map(i => i);
-        newValue[index] = item;
-        this.set(newValue);
-    }
 }
 
 export const interestsStorage = new InterestsStorage();

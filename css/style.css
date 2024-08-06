@@ -250,18 +250,6 @@
     gap: 8px;
 }
 
-.contact-box {
-    background: #000;
-    color: #fff;
-    min-height: 0;
-}
-
-.contact-box__text {
-    font-size: 10px;
-    line-height: 15px;
-    font-weight: 400;
-}
-
 .interests__tag {
     padding: 4px 10px;
     border-radius: 40px;
