@@ -65,121 +65,83 @@
             </div>
         </div>
         <div class="row cv__row">
-            <div class="box experience-box">
-                <div class="box__inner">
-                    <div class="box__title">
-                        Experience
-                    </div>
-                    <div class="box__content">
-                        <experiences-container></experiences-container>
-                    </div>
-                </div>
-            </div>
-            <div class="box tools-box">
-                <div class="box__inner">
-                    <div class="box__title">
-                        Tools
-                    </div>
-                    <div class="box__content">
-                        <div class="tools__container">
-                            <div class="tools__wrapper">
-                                <div class="tools__title-wrapper">
-                                    <span class="tools__title tag">design</span>
-                                </div>
-                                <div class="tools__set">
-                                    <div class="tools__item">
-                                        <img src="./images/icons/figma.svg" alt="figma icon">
-                                    </div>
-                                    <div class="tools__item">
-                                        <img src="./images/icons/photoshop.svg" alt="adobe photoshop icon">
-                                    </div>
-                                    <div class="tools__item">
-                                        <img src="./images/icons/illustrator.svg" alt="adobe illustrator icon">
-                                    </div>
-                                    <div class="tools__item">
-                                        <img src="./images/icons/premiere.svg" alt="adobe premiere icon">
-                                    </div>
-                                    <div class="tools__item">
-                                        <img src="./images/icons/notion.svg" alt="notion icon">
-                                    </div>
-                                    <div class="tools__item">
-                                        <img src="./images/icons/meet.svg" alt="google meet icon">
-                                    </div>
-                                </div>
+            <custom-box>
+                <span slot="title">Experience</span>
+                <experiences-container slot="content"></experiences-container>
+            </custom-box>
+            <custom-box>
+                <span slot="title">Tools</span>
+                <div slot="content" class="tools__container">
+                    <div class="tools__wrapper">
+                        <div class="tools__title-wrapper">
+                            <span class="tools__title tag">design</span>
+                        </div>
+                        <div class="tools__set">
+                            <div class="tools__item">
+                                <img src="./images/icons/figma.svg" alt="figma icon">
                             </div>
-                            <div class="tools__wrapper">
-                                <div class="tools__title-wrapper">
-                                    <span class="tools__title tag">no-code</span>
-                                </div>
-                                <div class="tools__set">
-                                    <div class="tools__item">
-                                        <img src="./images/icons/zapìer.svg" alt="zapìer icon">
-                                    </div>
-                                    <div class="tools__item">
-                                        <img src="./images/icons/webflow.svg" alt="webflow icon">
-                                    </div>
-                                    <div class="tools__item">
-                                        <img src="./images/icons/framer.svg" alt="framer icon">
-                                    </div>
-                                    <div class="tools__item">
-                                        <img src="./images/icons/wordpress.svg" alt="wordpress icon">
-                                    </div>
-                                </div>
+                            <div class="tools__item">
+                                <img src="./images/icons/photoshop.svg" alt="adobe photoshop icon">
                             </div>
-                            <div class="tools__wrapper">
-                                <div class="tools__title-wrapper">
-                                    <span class="tools__title tag">artificial intelligence</span>
-                                </div>
-                                <div class="tools__set">
-                                    <div class="tools__item">
-                                        <img src="./images/icons/ChatGPT.svg" alt="ChatGPT icon">
-                                    </div>
-                                    <div class="tools__item">
-                                        <img src="./images/icons/Copilot.svg" alt="Copilot icon">
-                                    </div>
-                                    <div class="tools__item">
-                                        <img src="./images/icons/Midjourney.svg" alt="Midjourney icon">
-                                    </div>
-                                </div>
+                            <div class="tools__item">
+                                <img src="./images/icons/illustrator.svg" alt="adobe illustrator icon">
+                            </div>
+                            <div class="tools__item">
+                                <img src="./images/icons/premiere.svg" alt="adobe premiere icon">
+                            </div>
+                            <div class="tools__item">
+                                <img src="./images/icons/notion.svg" alt="notion icon">
+                            </div>
+                            <div class="tools__item">
+                                <img src="./images/icons/meet.svg" alt="google meet icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools__wrapper">
+                        <div class="tools__title-wrapper">
+                            <span class="tools__title tag">no-code</span>
+                        </div>
+                        <div class="tools__set">
+                            <div class="tools__item">
+                                <img src="./images/icons/zapìer.svg" alt="zapìer icon">
+                            </div>
+                            <div class="tools__item">
+                                <img src="./images/icons/webflow.svg" alt="webflow icon">
+                            </div>
+                            <div class="tools__item">
+                                <img src="./images/icons/framer.svg" alt="framer icon">
+                            </div>
+                            <div class="tools__item">
+                                <img src="./images/icons/wordpress.svg" alt="wordpress icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools__wrapper">
+                        <div class="tools__title-wrapper">
+                            <span class="tools__title tag">artificial intelligence</span>
+                        </div>
+                        <div class="tools__set">
+                            <div class="tools__item">
+                                <img src="./images/icons/ChatGPT.svg" alt="ChatGPT icon">
+                            </div>
+                            <div class="tools__item">
+                                <img src="./images/icons/Copilot.svg" alt="Copilot icon">
+                            </div>
+                            <div class="tools__item">
+                                <img src="./images/icons/Midjourney.svg" alt="Midjourney icon">
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </custom-box>
         </div>
         <div class="row cv__row">
-            <div class="box education-box">
-                <div class="box__inner">
-                    <div class="box__title">
-                        Education
-                    </div>
-                    <div class="box__content">
-                        <educations-container></educations-container>
-                    </div>
-                </div>
-            </div>
+            <custom-box class="education-box">
+                <span slot="title">Education</span>
+                <educations-container slot="content"></educations-container>
+            </custom-box>
             <div class="extra-box column cv__column">
-                <div class="box interests-box">
-                    <div class="box__inner">
-                        <div class="box__title">
-                            Interests
-                        </div>
-                        <div class="box__content">
-                            <div class="box__list box__list_row interests-box__list">
-                                <div class="interests__tag tag">branding</div>
-                                <div class="interests__tag tag">design</div>
-                                <div class="interests__tag tag">photography</div>
-                                <div class="interests__tag tag">artificial intelligence</div>
-                                <div class="interests__tag tag">illustration</div>
-                                <div class="interests__tag tag">typography</div>
-                                <div class="interests__tag tag">social networks</div>
-                                <div class="interests__tag tag">research</div>
-                                <div class="interests__tag tag">dron pilot</div>
-                                <div class="interests__tag tag">games</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <interests-box></interests-box>
                 <div class="box contact-box">
                     <div class="box__inner">
                         <div class="box__title">

@@ -1,7 +1,3 @@
-// <custom-modal class="modal" open="false">
-//     <form is="experience-form" experienceindex="${experienceIndex}">
-//     </form>
-// </custom-modal>
 import {styles} from "./education-card.styles.js";
 
 const generateTemplateClone = (educationIndex, mostRecent = false) => {
@@ -20,7 +16,7 @@ const generateTemplateClone = (educationIndex, mostRecent = false) => {
             </span>
             ${mostRecent 
                 ? `<div slot="action" class="tag card__action card__tag">
-                    <img src="../../../images/icons/like.svg">
+                        <img src="../../../images/icons/like.svg">
                     </div>`
                 : ''
             }

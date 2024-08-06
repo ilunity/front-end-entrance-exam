@@ -11,9 +11,9 @@ const generateContent = (educations) => {
                     <span slot="date">${date}</span>
                     <span slot="name">${name}</span>
                     ${tags.map(i => `
-                        <custom-tag slot="tag">
-                            ${i}
-                        </custom-tag>
+                        <span slot="tag">
+                            #${i}
+                        </span>
                     `).join('')}
                     <span slot="school">${school}</span>
                 </education-card>
