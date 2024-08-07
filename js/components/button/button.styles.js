@@ -5,6 +5,7 @@ export const styles = `
             height: 30px;
             border-radius: 5px;
             background: #28D979;
+            border: 0px;
         }
         
         .custom-button:hover {

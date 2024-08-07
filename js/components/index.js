@@ -21,3 +21,5 @@ import './interests-box/interests-box.js';
 import './interests-form/interests-form.js';
 import './contact-box/contact-box.js';
 import './contact-form/contact-form.js';
+import './profile-box/profile-box.js';
+import './profile-form/profile-form.js';

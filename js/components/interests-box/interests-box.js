@@ -5,14 +5,14 @@ const generateContent = (interests) => {
     const template = document.createElement('template');
 
     template.innerHTML = `
+        ${styles}
         <custom-modal class="modal" open="false">
             <span slot="header">Change interests</span>
             <form is="interests-form"></form>
         </custom-modal>
         <custom-box>
-            ${styles}
             <span slot="title">Interests</span>
-            <interests-container slot="content" cc="dsf" interests='${JSON.stringify(interests)}'></interests-container>
+            <interests-container slot="content" interests='${JSON.stringify(interests)}'></interests-container>
         </custom-box>
     `;
 

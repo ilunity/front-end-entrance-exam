@@ -4,6 +4,7 @@ const generateContent = () => {
     const template = document.createElement('template');
     template.innerHTML = `
         ${styles}
+        <link href="../../../css/normalize.css" rel="stylesheet">
         <div class="box">
             <div class="box__inner">
                 <div class="box__title">
